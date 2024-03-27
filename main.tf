@@ -1,3 +1,9 @@
+azurerm_resource_group
+azurerm_service_plan
+azurerm_linux_web_app
+ 
+
+
 terraform {
   required_providers {
     azurerm = {
