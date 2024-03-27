@@ -1,6 +1,3 @@
-
-
-
 resource "random_integer" "priority" {
   min = 1
   max = 50000
@@ -19,4 +16,9 @@ resource "aws_alb_listener_rule" "main" {
     target_group_arn = var.target_group_arn
   }
   # ... (other aws_alb_listener_rule arguments) ...
+}
+
+resource "azurerm_resource_group" "example" {
+  name     = "example"
+  location = "West Europe"
 }
