@@ -1,3 +1,17 @@
+terraform {
+  required_providers {
+    azurerm = {
+      source = "hashicorp/azurerm"
+      version = "~> 3.0.0"
+    }
+  }
+  required_version = ">= 0.14.9"
+}
+provider "azurerm" {
+  features {}
+}
+
+
 resource "random_integer" "priority" {
   min = 1
   max = 50000
@@ -7,18 +21,4 @@ resource "random_integer" "priority" {
   }
 }
 
-resource "aws_alb_listener_rule" "main" {
-  listener_arn = random_integer.priority.keepers.listener_arn
-  priority     = random_integer.priority.result
 
-  action {
-    type             = "forward"
-    target_group_arn = var.target_group_arn
-  }
-  # ... (other aws_alb_listener_rule arguments) ...
-}
-
-resource "azurerm_resource_group" "example" {
-  name     = "example"
-  location = "West Europe"
-}
