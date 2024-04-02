@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.erfei.gererparcitapp.GererParcItAppApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-02T19:33:24" hostname="LOCK" time="0.645">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.erfei.gererparcitapp.GererParcItAppApplicationTests" time="0.645"/>
+  <system-out><![CDATA[16:33:23.244 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.erfei.gererparcitapp.GererParcItAppApplicationTests]: GererParcItAppApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:33:23.370 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.erfei.gererparcitapp.GererParcItAppApplication for test class com.erfei.gererparcitapp.GererParcItAppApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.4)
+
+2024-04-02T16:33:23.727-03:00  INFO 9888 --- [gerer-parc-it-app] [    Test worker] c.e.g.GererParcItAppApplicationTests     : Starting GererParcItAppApplicationTests using Java 17.0.10 with PID 9888 (started by Karl in D:\application infra\gerer-parc-it-app\gerer-parc-it-app)
+2024-04-02T16:33:23.728-03:00  INFO 9888 --- [gerer-parc-it-app] [    Test worker] c.e.g.GererParcItAppApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-04-02T16:33:24.611-03:00  INFO 9888 --- [gerer-parc-it-app] [    Test worker] c.e.g.GererParcItAppApplicationTests     : Started GererParcItAppApplicationTests in 1.082 seconds (process running for 2.102)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
